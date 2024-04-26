@@ -1,8 +1,8 @@
 <script setup>
 import Attribution from '../components/Attribution.vue';
 import CardFull from '../components/CardFull.vue';
-
 import { ref, onBeforeMount, computed, onMounted } from 'vue';
+import CardForm from '../components/CardForm.vue';
 
 const cardBackground = ref('');
 
@@ -24,19 +24,27 @@ onBeforeMount(() => {
 <template>
     <section
         :style="`background-image: url(${cardBackground})`"
-        id="card-background">
+        class="card-background">
         <CardFull />
     </section>
+    <CardForm />
 
-    <Attribution />
+    <Attribution class="attribution" />
 </template>
 <style scoped>
-#card-background {
+.card-background {
     background-color: purple;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 220px;
+    height: 230px;
     display: flex;
     justify-content: center;
+}
+.attribution {
+    position: relative;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 100px;
 }
 </style>

@@ -35,6 +35,8 @@ onBeforeMount(() => {
     background-color: purple;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 280px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
 }
 </style>

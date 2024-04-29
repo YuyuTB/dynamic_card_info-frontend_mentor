@@ -33,7 +33,7 @@ onBeforeMount(() => {
 </template>
 <style scoped>
 .card-background {
-    background-color: purple;
+    background-color: hsl(278, 68%, 11%);
     background-repeat: no-repeat;
     background-size: cover;
     height: 230px;

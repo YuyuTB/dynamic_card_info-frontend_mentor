@@ -13,12 +13,12 @@ import CardFront from '../components/CardFront.vue';
 <style scoped>
 .card-wrapper {
     padding: 40px 20px 0 20px;
-    width: 300px;
+    width: 280px;
 }
 .card-back {
-    transform: translate(15%, -5%);
+    transform: translate(10%, -5%);
 }
 .card-front {
-    transform: translate(-8%, -51%);
+    transform: translate(-10%, -50%);
 }
 </style>
